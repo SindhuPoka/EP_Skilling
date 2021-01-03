@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Employees>
+<employee eid="a">
+<name>Sindhu</name>
+<email>sindhu@c.c</email>
+</employee>
+<employee eid="b">
+<name>Srinu</name>
+<email>sru@c.c</email>
+</employee>
+</Employees>
