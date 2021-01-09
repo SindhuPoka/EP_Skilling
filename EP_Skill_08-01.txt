@@ -1,0 +1,35 @@
+create database epskill;
+use epskill;
+create table employee(e_id int(5),ename varchar(10),salary float, age int,dept varchar(15),designation varchar(15),dob date,city varchar(10));
+desc employee;
+insert  into employee values(12,'Krishna',75000,43,'CSE','HOD','1998-04-21','Bangalore');
+insert  into employee values(13,'Ram',45600,40,'EEE','Asst.Prof','1978-03-25','Goa');
+insert  into employee values(14,'Krupa',87650,35,'ME','Lecturer','1989-12-31','Shimla');
+insert  into employee values(15,'Vitika',98000,45,'DS','Asst.lec','1993-08-11','Guhwati');
+insert  into employee values(16,'Varun',35700,50,'ECE','HOD','1997-07-30','Manglore');
+insert  into employee values(17,'Priya',89320,55,'IT','Asst.Prof','1979-10-25','Hyderabad');
+select * from employee;
+
+#UPDATING SINGLE COLUMN VALUES
+->update employee set age=29 where city='Goa';
+select * from employee;
+
+#UPDATING MULTIPLE COLUMN VALUES
+->update employee  set salary=40000, age=51 where city='Manglore';
+select * from employee;
+
+#DELETING A ROW
+->delete from employee where dept='DS';
+select * from employee;
+
+#DELETING COLUMN USING ALTER COMMAND
+->alter table employee drop column dob;
+select * from employee;
+
+#INSERTING VALUES 
+->insert into employee values(18,'hari',67800,49,'CIVIL','HEAD','Punjab');
+select * from employee;
+
+#INSERTING COLUMN USING ALTER COMMAND
+->alter table employee add  column dob date;
+select * from employee;
